@@ -41,7 +41,7 @@ jQuery(document).ready(function(jQuery) {
 					jQuery('.comment-list').append(data);
 				}
 				jQuery('#captcha').val('');
-				$('.captcha-image img').attr('src',$('.captcha-image img').attr('src')+'&time='+Date.parse(new Date()));
+				$('.captcha-images img').attr('src',$('.captcha-images img').attr('src')+'&time='+Date.parse(new Date()));
 				mi_prompt( 'success', '评论提交成功' );
 				setTimeout("jQuery('#submit').removeClass('disabled').val('发表评论').attr('disabled',false)", 2000);
 				setTimeout("jQuery('#comment_message').slideUp()", 2000);

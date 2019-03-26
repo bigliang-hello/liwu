@@ -108,7 +108,7 @@ function search_height() {
             jQuery(".featured-search").addClass("hidden"),
             jQuery("body").addClass("nt_second_menu_height_100")
         }
-        $(".featured-search .item .image").css("height", $featured_cover_height)
+        $(".featured-search .item .images").css("height", $featured_cover_height)
 };
 
 jQuery(document).ready(function($) {
@@ -611,7 +611,7 @@ $(document).on('click', '.comment-action', function(event) {
 
 });
 
-$(document).on('click', '.captcha-image img', function(event) {
+$(document).on('click', '.captcha-images img', function(event) {
 	event.preventDefault();
 	var src = $(this).attr('src');
 
@@ -662,7 +662,7 @@ $(document).on('click', '#sometips', function(event) {
 });
 
 function popupImage() {
-    $('.suxing-popup-image').magnificPopup({
+    $('.suxing-popup-images').magnificPopup({
         type: 'image',
         closeOnContentClick: true,
         closeMarkup: '<button title="%title%" type="button" class="mfp-close suxing-mfp-close-button"></button>',
@@ -732,7 +732,7 @@ jQuery(document).ready(function($){
 	if( globals.image_popup !== 'null' && globals.image_popup !== 'disable' ){
 
 		if( globals.image_popup == 'image' ){
-			var aclass = 'suxing-popup-image';
+			var aclass = 'suxing-popup-images';
 		}else if( globals.image_popup == 'gallery' ){
 			var aclass = 'suxing-popup-gallery-item';
 		}
@@ -852,7 +852,7 @@ $(document).on('click touchstart', '.btn-bigger-cover', function(event) {
 				$('.bigger_share').attr('href',data.share);
 				$('.bigger_down').attr('href',data.src);
 				bigger_cover.removeClass('load_bigger_img');
-				$('.image-loading').remove();
+				$('.images-loading').remove();
 			}else{
 				mi_prompt( 'error', data.m );
 			}
@@ -914,7 +914,7 @@ $(document).on('click', '.page-break-ajax', function(event) {
 		if( globals.image_popup !== 'null' && globals.image_popup !== 'disable' ){
 
 			if( globals.image_popup == 'image' ){
-				var aclass = 'suxing-popup-image';
+				var aclass = 'suxing-popup-images';
 			}else if( globals.image_popup == 'gallery' ){
 				var aclass = 'suxing-popup-gallery-item';
 			}

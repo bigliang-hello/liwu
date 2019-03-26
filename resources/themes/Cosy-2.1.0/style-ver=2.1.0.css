@@ -1701,7 +1701,7 @@ feartured post date
 .post-navigation a.next:hover>i{-webkit-animation-name:hvr-buzz-out;animation-name:hvr-buzz-out;-webkit-animation-duration:0.75s;animation-duration:0.75s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:1;animation-iteration-count:1;}
 
 /*--------------------------------------------------------------
-27.1 navigation with image
+27.1 navigation with images
 --------------------------------------------------------------*/
 .post-navigation-with-image .item .image{position:relative;background-size:cover;background-repeat:no-repeat;background-position:center;height:133px;}
 .post-navigation-with-image .item .content{z-index:2;position:absolute;left:0;top:0;width:100%;height:100%;}
@@ -1818,7 +1818,7 @@ feartured post date
 .searchform input[type="text"]{border:1px solid #eee;padding:10px;font-size:12px;width:100%;}
 
 /*--------------------------------------------------------------
-36.0 media image widget
+36.0 media images widget
 --------------------------------------------------------------*/
 .widget_media_image img{max-width:100%;height:auto;}
 
@@ -2082,7 +2082,7 @@ feartured post date
 }
 
 /*-------------------------------------------------------------
-44.0 Post media: image
+44.0 Post media: images
  -------------------------------------------------------------*/
 
 /* expand icon */
