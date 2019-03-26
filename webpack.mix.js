@@ -24,4 +24,4 @@ mix.js('resources/js/app.js', 'public/js')
         'resources/themes/Cosy-2.1.0/core/functions/ajax-comment/ajax-comment-ver=2.1.0.js',
         'resources/themes/Cosy-2.1.0/core/functions/emoji/emoji-ver=2.1.0.js'
     ], 'public/js/all.js')
-    .less('resources/less/app.less', 'public/css').version();
+    .less('resources/less/app.less', 'public/css');

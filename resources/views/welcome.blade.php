@@ -8,7 +8,7 @@
         <link  rel='stylesheet' href="{{ mix('css/app.css') }}"/>
         <title>Laravel</title>
     </head>
-    <body class="home blog black-top grid-hover grid-radius grid-border" id="app">
+    <body class="home blog black-top grid-hover grid-radius grid-border">
     <section class="nice-mobile-overlay " id="nice-mobile-overlay">
         <div class="mobile-action">
             <button id="mobile-close-icon" class="btn btn-transparent btn-sm navbar-close color-white font-22 light-10">
