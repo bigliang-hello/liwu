@@ -7,40 +7,7 @@
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav navbar-site align-items-center flex-fill flex-nowrap">
-                    <li id="menu-item-3490" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-3490"><a>首页样式</a>
-                        <ul class="sub-menu">
-                            <li id="menu-item-3650" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-3650"><a href="index.html">CMS杂志</a></li>
-                            <li id="menu-item-3648" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3648"><a href="../cosy-style2/index.html">杂志样式</a></li>
-                            <li id="menu-item-3647" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3647"><a href="../cosy-style3/index.html">简约单栏</a></li>
-                        </ul>
-                    </li>
-                    <li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-17"><a>文章样式</a>
-                        <ul class="sub-menu">
-                            <li id="menu-item-3074" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3074"><a href="1944.html">文章样式1</a></li>
-                            <li id="menu-item-3075" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3075"><a href="1594.html">文章样式2</a></li>
-                            <li id="menu-item-3076" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3076"><a href="1941.html">文章样式3</a></li>
-                            <li id="menu-item-3077" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3077"><a href="1817.html">文章样式4</a></li>
-                            <li id="menu-item-3073" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3073"><a href="1849.html">相册文章</a></li>
-                            <li id="menu-item-3072" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3072"><a href="2607.html">视频文章</a></li>
-                            <li id="menu-item-3471" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3471"><a href="1938.html">视频样式2</a></li>
-                        </ul>
-                    </li>
-                    <li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-34"><a href="#">列表样式</a>
-                        <ul class="sub-menu">
-                            <li id="menu-item-8" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8"><a href="category/sheji.html">列表样式1</a></li>
-                            <li id="menu-item-7" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7"><a href="category/shishang.html">列表样式2</a></li>
-                            <li id="menu-item-6" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6"><a href="category/shangye.html">列表样式3</a></li>
-                        </ul>
-                    </li>
-                    <li id="menu-item-3499" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3499"><a href="topics.html">专题</a></li>
-                    <li id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-33"><a>页面模版</a>
-                        <ul class="sub-menu">
-                            <li id="menu-item-3080" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3080"><a href="myfriends.html">友军</a></li>
-                            <li id="menu-item-3079" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3079"><a href="sample-page-2.html">留言</a></li>
-                            <li id="menu-item-3752" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3752"><a href="typography.html">文字排版</a></li>
-                        </ul>
-                    </li>
-                    <li id="menu-item-16" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16"><a href="https://www.nicetheme.cn/store/cosy">购买主题</a></li>
+                    <li id="menu-item-16" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16"><a href="{{route('index')}}">首页</a></li>
                 </ul>
                 <ul class="navbar-nav navbar-sign align-items-center">
                     <li>

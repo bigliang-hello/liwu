@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Article;
+use App\Category;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +25,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('index');
+        $categories = Category::all();
+        $articles = Article::all()->take(12);
+        return view('index', compact('categories', 'articles'));
     }
 }

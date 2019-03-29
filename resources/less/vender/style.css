@@ -742,7 +742,7 @@ fieldset:disabled a.btn{pointer-events:none;}
 .item-card.col-lg-4 .card .image .original{max-height:261px;}
 .item-card .card .image .qiniu,
 .item-card .card .image .upyun,
-.item-card .card .image .aliyunoss{min-height:-webkit-fill-available;min-height:-moz-fill-available;min-height:-moz-available;min-height:fill-available;}
+.item-card .card .image .aliyunoss{min-height:-webkit-stretch;min-height:-moz-stretch;min-height:-moz-available;min-height:stretch;}
 @media (max-width:767px){
     .item-card .card{margin-bottom:0;}
     .item-card .card .image img{position:relative;transform:none;}
