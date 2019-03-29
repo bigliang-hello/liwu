@@ -25,3 +25,14 @@ mix.js('resources/js/app.js', 'public/js')
         'resources/themes/Cosy-2.1.0/core/functions/emoji/emoji-ver=2.1.0.js'
     ], 'public/js/all.js')
     .less('resources/less/app.less', 'public/css');
+
+mix.scripts([
+    'resources/themes/jquery/jquery-3.2.1.min.js',
+    'resources/themes/login/js/bootstrap.min.js',
+    'resources/themes/login/js/jquery.backstretch.min.js'
+], 'public/js/login.js')
+    .styles([
+        'resources/themes/login/css/bootstrap.min.css',
+        'resources/themes/login/css/form-elements.css',
+        'resources/themes/login/css/style.css'
+    ], 'public/css/login.css');
