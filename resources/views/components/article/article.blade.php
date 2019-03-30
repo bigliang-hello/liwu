@@ -1,7 +1,7 @@
 <div class="item-card d-flex col-12 col-sm-6 col-md-3 col-lg-3">
     <article class="card flex-fill mb-4 mb-sm-4-2 mb-md-4 mb-lg-4-2">
         <div class="image">
-            <a class="" href="3546.html" title="{{$article->title}}">
+            <a class="" href="{{route('article.show', $article->id)}}" title="{{$article->title}}">
                 <div class="custom-hover d-block">
                     <img src="{{$article->cover}}"
                          class="lazyload custom-hover-img timthumb_php"
@@ -13,7 +13,7 @@
 
             <div class="meta mt-2 light-12 ">
                                         <span class="u-cat-name font-12 d-block u-cat-dot u-color-red"><a
-                                                    class="text-primary" href="category/shangye.html">旅行·在路上</a></span>
+                                                    class="text-primary" href="category/shangye.html">{{$article->category->name}}</a></span>
             </div>
             <div class="title flex-grow-1 mt-2"><h2
                         class="font-16 font-md-14 font-xs-16 text-l2 font-weight-normal light-14">

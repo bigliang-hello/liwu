@@ -2,26 +2,40 @@
     <div class="container m-header">
         <div class="navbar navbar-expand-lg d-none d-lg-flex">
             <div class="navbar-header d-inline-block">
-                <a class="navbar-brand" href="index.html" title="Cosy主题-CMS杂志样式" style="background-image: url('wp-content/uploads/sites/11/2018/09/2018092518065583.png');"></a>
+                <a class="navbar-brand" href="index.html" title="礼物233" style="text-indent: 0px;color: white;font-size: 1.5rem;">礼物233<span style="font-size:1rem;">.com</span> </a>
 
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav navbar-site align-items-center flex-fill flex-nowrap">
-                    <li id="menu-item-16" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16"><a href="{{route('index')}}">首页</a></li>
+                    <li id="menu-item-1" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="{{route('index')}}">首页</a></li>
+
+                    <li id="menu-item-2" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a>推荐好文</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="#">文章样式1</a></li>
+                            <li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="#">文章样式2</a></li>
+                            <li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="#">文章样式3</a></li>
+                            <li id="menu-item-14" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="#">文章样式4</a></li>
+                            <li id="menu-item-15" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="#">相册文章</a></li>
+                            <li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="#">视频文章</a></li>
+                            <li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="#">视频样式2</a></li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-3" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#">推荐好礼</a></li>
                 </ul>
                 <ul class="navbar-nav navbar-sign align-items-center">
                     <li>
                         <button class="btn btn-link btn-sm btn-search font-16 text-secondary px-2 py-0"><i class="fal fa-search"></i></button>
                     </li>
-                    <li><a class="font-16 text-secondary d-block px-2" href="wp-login.php-redirect_to=https---demo.nicetheme.xyz-cosy-style1-wp-admin-post-new.php&amp;reauth=1.html"><i class="fal fa-edit"></i></a></li>
-                    <li><a href="wp-login.php.html" class="btn btn-outline-primary btn-sm btn-signin ml-2">登录</a></li>
+                    <li><a class="font-16 text-secondary d-block px-2" href="#"><i class="fal fa-edit"></i></a></li>
+                    <li><a href="{{route('login')}}" class="btn btn-outline-primary btn-sm btn-signin ml-2">登录</a></li>
                 </ul>
             </div>
         </div>
         <div class="navbar mobile-navbar flex-row flex-nowrap d-flex d-lg-none">
             <div class="navbar-header">
-                <a class="navbar-brand" href="index.html" title="Cosy主题-CMS杂志样式" style="background-image: url('wp-content/uploads/sites/11/2018/09/2018092518065583.png');">Cosy主题-CMS杂志样式</a>
-                <a class="navbar-brand mobile-navbar-brand d-none d-lg-none" href="index.html" title="Cosy主题-CMS杂志样式" style="background-image: url('wp-content/themes/Cosy-2.1.0/static/images/logo-mobile.png');">Cosy主题-CMS杂志样式</a>
+                <a class="navbar-brand" href="index.html" title="礼物233" style="background-image: url('wp-content/uploads/sites/11/2018/09/2018092518065583.png');">礼物233</a>
+                <a class="navbar-brand mobile-navbar-brand d-none d-lg-none" href="index.html" title="Cosy主题-CMS杂志样式" style="background-image: url('wp-content/themes/Cosy-2.1.0/static/images/logo-mobile.png');">礼物233</a>
             </div>
             <div class="navbar-collapse">
                 <ul class="navbar-nav flex-row">

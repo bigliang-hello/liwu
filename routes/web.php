@@ -14,3 +14,5 @@
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('index');
+
+Route::get('/articles/{article}', 'ArticleController@show')->name('article.show');

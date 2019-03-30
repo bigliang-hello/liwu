@@ -50,4 +50,4 @@ $(document).on('click', '.insert_emoji', function(event) {
 	event.preventDefault();
 	var emoji = $(this).data('emoji');
 	$('#comment').insertAtCaret(' '+emoji+' ');
-});
+}, { passive: false });
