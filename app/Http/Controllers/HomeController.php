@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Article;
 use App\Category;
+use App\Gift;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -27,6 +28,7 @@ class HomeController extends Controller
     {
         $categories = Category::all();
         $articles = Article::all()->take(12);
-        return view('index', compact('categories', 'articles'));
+        $gifts = Gift::all()->take(12);
+        return view('index', compact('categories', 'articles', 'gifts'));
     }
 }

@@ -31,7 +31,7 @@
             <div class="cms-push-liststyle02">
                 @include('common.more', ['title' => '推荐礼物', 'href' => '#'])
                 <div class="row row-10 row-xs-15">
-                    @each('components.article.article', $articles, 'article')
+                    @each('components.gift.gift', $gifts, 'gift')
                 </div>
             </div>
 

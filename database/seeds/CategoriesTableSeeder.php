@@ -47,6 +47,11 @@ class CategoriesTableSeeder extends Seeder
                 'image'       => 'storage/images/2018081116435976.png',
                 'description' => '送闺蜜',
             ],
+            [
+                'name'        => '程序员',
+                'image'       => 'storage/images/2018081116435976.png',
+                'description' => '程序员',
+            ],
         ];
 
         \Illuminate\Support\Facades\DB::table('categories')->insert($categories);

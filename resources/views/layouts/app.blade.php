@@ -6,6 +6,8 @@
     <meta name="wap-font-scale" content="no">
     <meta http-equiv="X-UA-Compatible" content="IE=9, IE=8;IE=7, IE=EDGE, chrome=1">
     <link  rel='stylesheet' href="{{ mix('css/app.css') }}"/>
+    <style>
+    </style>
     <script type='text/javascript'>
         /* <![CDATA[ */
         var globals = {"ajax_url":"https:\/\/demo.nicetheme.xyz\/cosy-style1\/wp-admin\/admin-ajax.php","url_theme":"https:\/\/demo.nicetheme.xyz\/cosy-style1\/wp-content\/themes\/Cosy-2.1.0","image_popup":"gallery","new_comment_position":"asc","single":"1","post_style":"three","home":"0","page":"0","silide":"0"};
