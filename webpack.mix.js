@@ -11,6 +11,8 @@ const mix = require('laravel-mix');
  |
  */
 
+
+//前端
 mix.js('resources/js/app.js', 'public/js')
     .scripts([
         'resources/themes/Cosy-2.1.0/static/js/jquery-ver=1.12.4.js',
@@ -26,6 +28,7 @@ mix.js('resources/js/app.js', 'public/js')
     ], 'public/js/all.js')
     .less('resources/less/app.less', 'public/css');
 
+//登录页面
 mix.scripts([
     'resources/themes/jquery/jquery-3.2.1.min.js',
     'resources/themes/login/js/bootstrap.min.js',
@@ -36,3 +39,4 @@ mix.scripts([
         'resources/themes/login/css/form-elements.css',
         'resources/themes/login/css/style.css'
     ], 'public/css/login.css');
+
