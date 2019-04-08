@@ -1,19 +1,26 @@
 <template>
-<div>
+<el-container>
     <Header></Header>
-    <AppMain></AppMain>
-    <Footer></Footer>
-</div>
+    <el-container>
+        <SideBar></SideBar>
+        <el-container>
+            <AppMain></AppMain>
+            <Footer></Footer>
+        </el-container>
+    </el-container>
+</el-container>
 </template>
 
 <script>
-import Header from './header.vue'
-import Footer from './footer.vue'
-import AppMain from './appmain.vue'
+import Header from './header'
+import Footer from './footer'
+import AppMain from './appmain'
+import SideBar from './sidebar'
 
 export default {
     name: 'Layout',
     components: {
+        SideBar,
         Header,
         Footer,
         AppMain

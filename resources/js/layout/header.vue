@@ -1,7 +1,5 @@
 <template>
-<div class="navbar">
-    <el-header>Header</el-header>
-</div>
+    <el-header style="background-color: #00CED1;">Header</el-header>
 </template>
 
 <script>
@@ -10,6 +8,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style>
 
 </style>

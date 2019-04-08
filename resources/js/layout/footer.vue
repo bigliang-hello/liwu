@@ -1,7 +1,5 @@
 <template>
-<div class="navbar">
-    <el-footer>Footer</el-footer>
-</div>
+    <el-footer style="background-color: #00CED1;">Footer</el-footer>
 </template>
 
 <script>
@@ -10,6 +8,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style>
 
 </style>

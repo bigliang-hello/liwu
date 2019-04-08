@@ -1,9 +1,7 @@
 <template>
-<section class="app-main">
-    <el-container>
+    <el-main>
         <router-view />
-    </el-container>
-</section>
+    </el-main>
 </template>
 
 <script>
@@ -12,6 +10,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style>
 
 </style>
