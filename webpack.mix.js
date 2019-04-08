@@ -13,7 +13,7 @@ const mix = require('laravel-mix');
 
 
 //前端
-mix.js('resources/js/app.js', 'public/js')
+mix.js('resources/js/main.js', 'public/js/app.js')
     .scripts([
         'resources/themes/Cosy-2.1.0/static/js/jquery-ver=1.12.4.js',
         'resources/themes/Cosy-2.1.0/static/js/jquery-migrate.min-ver=1.4.1.js',

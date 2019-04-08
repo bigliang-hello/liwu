@@ -12,11 +12,7 @@
     <title>liwu233</title>
 </head>
 <body>
-
-<div id="app">
-    <App></App>
-</div>
-
+    <div id="app"></div>
 <script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>
