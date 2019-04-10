@@ -1,5 +1,5 @@
 <template>
-    <el-footer style="background-color: #00CED1;">Footer</el-footer>
+<el-footer style="background-color: #00CED1;">Footer</el-footer>
 </template>
 
 <script>
