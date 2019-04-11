@@ -1,33 +1,42 @@
 <template>
-<el-container>
-    <Header></Header>
+  <el-container :style="{
+      height: '100vh'
+  }">
+    <el-header :style="{ 
+        backgroundColor: '#00CED1', 
+     }">
+      <Header/>
+    </el-header>
     <el-container>
-        <SideBar></SideBar>
-        <el-container>
-            <AppMain></AppMain>
-            <Footer></Footer>
-        </el-container>
+      <el-aside style="background-color: #d0e9c6;">
+        <side-bar/>
+      </el-aside>
+      <el-container>
+        <AppMain></AppMain>
+        <el-footer style="background-color: #00CED1;">
+          <Footer></Footer>
+        </el-footer>
+      </el-container>
     </el-container>
-</el-container>
+  </el-container>
 </template>
 
 <script>
-import Header from './header'
-import Footer from './footer'
-import AppMain from './appmain'
-import SideBar from './sidebar'
+import Header from "./Header";
+import Footer from "./Footer";
+import AppMain from "./AppMain";
+import SideBar from "./SideBar";
 
 export default {
-    name: 'Layout',
-    components: {
-        SideBar,
-        Header,
-        Footer,
-        AppMain
-    }
-}
+  name: "Layout",
+  components: {
+    SideBar,
+    Header,
+    Footer,
+    AppMain
+  }
+};
 </script>
 
 <style lang="scss" >
-
 </style>

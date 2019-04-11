@@ -1,13 +1,12 @@
 <template>
-<el-footer style="background-color: #00CED1;">Footer</el-footer>
+  <div>Footer</div>
 </template>
 
 <script>
 export default {
-    name: 'Footer',
-}
+  name: "Footer"
+};
 </script>
 
 <style>
-
 </style>

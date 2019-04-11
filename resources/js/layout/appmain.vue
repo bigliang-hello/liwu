@@ -1,15 +1,14 @@
 <template>
-<el-main>
-    <router-view />
-</el-main>
+  <el-main>
+    <router-view/>
+  </el-main>
 </template>
 
 <script>
 export default {
-    name: 'AppMain',
-}
+  name: "AppMain"
+};
 </script>
 
 <style>
-
 </style>

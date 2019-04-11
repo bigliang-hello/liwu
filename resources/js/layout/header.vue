@@ -1,13 +1,14 @@
 <template>
-<el-header style="background-color: #00CED1;">Header</el-header>
+  <div>
+      Header
+  </div>
 </template>
 
 <script>
 export default {
-    name: 'Header',
-}
+  name: "Header"
+};
 </script>
 
 <style>
-
 </style>
