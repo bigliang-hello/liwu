@@ -10,7 +10,7 @@
     </style>
     <script type='text/javascript'>
         /* <![CDATA[ */
-        var globals = {"ajax_url":"https:\/\/demo.nicetheme.xyz\/cosy-style1\/wp-admin\/admin-ajax.php","url_theme":"https:\/\/demo.nicetheme.xyz\/cosy-style1\/wp-content\/themes\/Cosy-2.1.0","image_popup":"gallery","new_comment_position":"asc","single":"1","post_style":"three","home":"0","page":"0","silide":"0"};
+        var globals = {"ajax_url":"https:\/\/demo.nicetheme.xyz\/cosy-style1\/wp-dashboard\/dashboard-ajax.php","url_theme":"https:\/\/demo.nicetheme.xyz\/cosy-style1\/wp-content\/themes\/Cosy-2.1.0","image_popup":"gallery","new_comment_position":"asc","single":"1","post_style":"three","home":"0","page":"0","silide":"0"};
         /* ]]> */
     </script>
     <title>礼物233-选择困难症的福音</title>

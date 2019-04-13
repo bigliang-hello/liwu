@@ -31,4 +31,9 @@ class HomeController extends Controller
         $gifts = Gift::all()->take(12);
         return view('index', compact('categories', 'articles', 'gifts'));
     }
+
+    public function dashboard()
+    {
+        return view('dashboard.index');
+    }
 }

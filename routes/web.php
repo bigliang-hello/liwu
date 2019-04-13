@@ -18,3 +18,11 @@ Route::get('/', 'HomeController@index')->name('index');
 Route::get('/articles/{article}', 'ArticleController@show')->name('articles.show');
 
 Route::get('/gifts/{gift}', 'GiftController@show')->name('gifts.show');
+
+//Route::group(['prefix' => 'dashboard', 'middleware' => ['auth', 'dashboard']], function () {
+//    Route::get('{path?}', 'HomeController@index')->where('path', '[\/\w\.-]*');
+//});
+
+Route::group(['prefix' => 'dashboard'], function () {
+    Route::get('{path?}', 'HomeController@dashboard')->where('path', '[\/\w\.-]*');
+});

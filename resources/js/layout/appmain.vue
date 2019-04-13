@@ -1,12 +1,12 @@
 <template>
-  <el-main>
-    <router-view/>
-  </el-main>
+<div>
+    <router-view />
+</div>
 </template>
 
 <script>
 export default {
-  name: "AppMain"
+    name: "AppMain"
 };
 </script>
 

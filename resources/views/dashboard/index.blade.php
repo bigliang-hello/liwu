@@ -9,9 +9,10 @@
     <link  rel='stylesheet' href="{{ mix('css/app.css') }}"/>
     <style>
     </style>
-    <title>liwu233</title>
+    <title>{{config('app.name')}}</title>
 </head>
 <body>
+<div>233</div>
     <div id="app"></div>
 <script src="{{ mix('js/app.js') }}"></script>
 </body>
