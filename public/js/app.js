@@ -17239,6 +17239,59 @@ new vue__WEBPACK_IMPORTED_MODULE_2___default.a({
 
 /***/ }),
 
+/***/ "./resources/js/modules/article/index.js":
+/*!***********************************************!*\
+  !*** ./resources/js/modules/article/index.js ***!
+  \***********************************************/
+/*! exports provided: routes */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./routes */ "./resources/js/modules/article/routes.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "routes", function() { return _routes__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/modules/article/routes.js":
+/*!************************************************!*\
+  !*** ./resources/js/modules/article/routes.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ([{
+  path: 'articles',
+  component: function component() {
+    return Promise.resolve(/*! import() */).then(__webpack_require__.bind(null, /*! ../../App.vue */ "./resources/js/App.vue"));
+  },
+  children: [{
+    path: '/',
+    name: 'dashboard.article',
+    component: function component() {
+      return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ./Article */ "./resources/js/modules/article/Article.vue"));
+    }
+  }, {
+    path: 'create',
+    name: 'dashboard.article.create',
+    component: function component() {
+      return Promise.resolve().then(function webpackMissingModule() { var e = new Error("Cannot find module './Create'"); e.code = 'MODULE_NOT_FOUND'; throw e; });
+    }
+  }, {
+    path: ':id/edit',
+    name: 'dashboard.article.edit',
+    component: function component() {
+      return Promise.resolve().then(function webpackMissingModule() { var e = new Error("Cannot find module './Edit'"); e.code = 'MODULE_NOT_FOUND'; throw e; });
+    }
+  }]
+}]);
+
+/***/ }),
+
 /***/ "./resources/js/modules/home/index.js":
 /*!********************************************!*\
   !*** ./resources/js/modules/home/index.js ***!
@@ -17305,6 +17358,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home/index */ "./resources/js/modules/home/index.js");
+/* harmony import */ var _article_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./article/index */ "./resources/js/modules/article/index.js");
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
 
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
@@ -17314,22 +17368,21 @@ function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
 
 
+
 /* harmony default export */ __webpack_exports__["default"] = ([{
   path: '/dashboard',
   component: function component() {
     return __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! ../layout */ "./resources/js/layout/index.vue"));
   },
   // beforeEnter: requireAuth,
-  children: _toConsumableArray(_home_index__WEBPACK_IMPORTED_MODULE_0__["routes"])
-}]);
-
-function requireAuth(to, from, next) {
-  if (window.User) {
-    return next();
-  } else {
-    return next('/');
-  }
-}
+  children: [].concat(_toConsumableArray(_home_index__WEBPACK_IMPORTED_MODULE_0__["routes"]), _toConsumableArray(_article_index__WEBPACK_IMPORTED_MODULE_1__["routes"]))
+}]); // function requireAuth(to, from, next) {
+//   if (window.User) {
+//     return next()
+//   } else {
+//     return next('/')
+//   }
+// }
 
 /***/ }),
 
@@ -17400,12 +17453,13 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODU
 var routes = [{
   path: '/',
   component: function component() {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.bind(null, /*! ../App */ "./resources/js/App.vue"));
+    return Promise.resolve(/*! import() */).then(__webpack_require__.bind(null, /*! ../App.vue */ "./resources/js/App.vue"));
   },
   children: _toConsumableArray(_modules_index__WEBPACK_IMPORTED_MODULE_3__["routes"])
 }];
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
-  routes: routes
+  routes: routes,
+  mode: 'history'
 });
 router.beforeEach(_beforeEach__WEBPACK_IMPORTED_MODULE_2__["default"]);
 /* harmony default export */ __webpack_exports__["default"] = (router);

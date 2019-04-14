@@ -1,19 +1,20 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import beforeEach from './beforeEach'
-import { routes as dashboard } from '../modules/index'
+import { routes as modules } from '../modules/index'
 
 
 Vue.use(Router)
 
 const routes = [{
     path: '/',
-    component: () => import('../App') ,
-    children: [...dashboard],
+    component: () => import('../App.vue') ,
+    children: [...modules],
   }];
 
 const router = new Router({
-  routes
+  routes,
+  mode: 'history',
 })
 
 router.beforeEach(beforeEach);
