@@ -17279,13 +17279,13 @@ __webpack_require__.r(__webpack_exports__);
     path: 'create',
     name: 'dashboard.article.create',
     component: function component() {
-      return Promise.resolve().then(function webpackMissingModule() { var e = new Error("Cannot find module './Create'"); e.code = 'MODULE_NOT_FOUND'; throw e; });
+      return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ./Create */ "./resources/js/modules/article/Create.vue"));
     }
   }, {
     path: ':id/edit',
     name: 'dashboard.article.edit',
     component: function component() {
-      return Promise.resolve().then(function webpackMissingModule() { var e = new Error("Cannot find module './Edit'"); e.code = 'MODULE_NOT_FOUND'; throw e; });
+      return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ./Edit */ "./resources/js/modules/article/Edit.vue"));
     }
   }]
 }]);

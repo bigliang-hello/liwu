@@ -1,12 +1,12 @@
 <template>
 <el-container :style="{height: '100vh'}">
-    <el-aside style="background-color: #d0e9c6;">
-        <side-bar />
-    </el-aside>
+    <el-header :style="{backgroundColor: '#00CED1'}">
+        <Header />
+    </el-header>
     <el-container>
-        <el-header :style="{backgroundColor: '#00CED1'}">
-            <Header />
-        </el-header>
+        <el-aside>
+            <side-bar />
+        </el-aside>
         <el-container>
             <el-main>
                 <AppMain></AppMain>

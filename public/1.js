@@ -15,11 +15,62 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      statistics: {}
+      filters: {
+        name: ''
+      },
+      tableData: [{
+        date: '2016-05-02',
+        name: '王小虎',
+        address: '上海市普陀区金沙江路 1518 弄'
+      }, {
+        date: '2016-05-04',
+        name: '王小虎',
+        address: '上海市普陀区金沙江路 1517 弄'
+      }, {
+        date: '2016-05-01',
+        name: '王小虎',
+        address: '上海市普陀区金沙江路 1519 弄'
+      }, {
+        date: '2016-05-03',
+        name: '王小虎',
+        address: '上海市普陀区金沙江路 1516 弄'
+      }]
     };
+  },
+  methods: {
+    handleAdd: function handleAdd() {},
+    getUsers: function getUsers() {}
   }
 });
 
@@ -40,7 +91,106 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._v("\n    111\n")])
+  return _c(
+    "section",
+    [
+      _c(
+        "el-col",
+        { staticClass: "mb-4" },
+        [
+          _c(
+            "el-breadcrumb",
+            { attrs: { "separator-class": "el-icon-arrow-right" } },
+            [
+              _c("el-breadcrumb-item", { attrs: { to: { path: "/" } } }, [
+                _vm._v("首页")
+              ]),
+              _vm._v(" "),
+              _c("el-breadcrumb-item", [_vm._v("活动管理")]),
+              _vm._v(" "),
+              _c("el-breadcrumb-item", [_vm._v("活动列表")]),
+              _vm._v(" "),
+              _c("el-breadcrumb-item", [_vm._v("活动详情")])
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "el-col",
+        { staticClass: "toolbar", attrs: { span: 24 } },
+        [
+          _c(
+            "el-form",
+            { attrs: { inline: true, model: _vm.filters } },
+            [
+              _c(
+                "el-form-item",
+                [
+                  _c("el-input", {
+                    attrs: { placeholder: "姓名" },
+                    model: {
+                      value: _vm.filters.name,
+                      callback: function($$v) {
+                        _vm.$set(_vm.filters, "name", $$v)
+                      },
+                      expression: "filters.name"
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "el-form-item",
+                [
+                  _c(
+                    "el-button",
+                    { attrs: { type: "primary" }, on: { click: _vm.getUsers } },
+                    [_vm._v("查询")]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "el-form-item",
+                [
+                  _c(
+                    "el-button",
+                    {
+                      attrs: { type: "primary" },
+                      on: { click: _vm.handleAdd }
+                    },
+                    [_vm._v("新增")]
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "el-table",
+        { staticStyle: { width: "100%" }, attrs: { data: _vm.tableData } },
+        [
+          _c("el-table-column", { attrs: { prop: "date", label: "日期" } }),
+          _vm._v(" "),
+          _c("el-table-column", { attrs: { prop: "name", label: "姓名" } }),
+          _vm._v(" "),
+          _c("el-table-column", { attrs: { prop: "address", label: "地址" } })
+        ],
+        1
+      )
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
