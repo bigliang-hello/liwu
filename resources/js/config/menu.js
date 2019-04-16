@@ -1,6 +1,6 @@
 export default [{
   name: '面板',
-  icon: 'fas fa-tachometer-alt',
+  icon: 'fa fa-tachometer-alt',
   uri: { name: 'dashboard.home' }
 }, {
   name: '内容模块',
@@ -20,8 +20,8 @@ export default [{
     icon: 'fas fa-tags',
     uri: { name: 'dashboard.tag' }
   }, {
-    name: '',
-    permission: '分类管理',
+    name: '分类管理',
+    permission: 'LIST_CATEGORY',
     icon: 'fas fa-list-alt',
     uri: { name: 'dashboard.category' }
   }, {
@@ -29,11 +29,6 @@ export default [{
     permission: 'LIST_LINK',
     icon: 'fas fa-globe',
     uri: { name: 'dashboard.link' }
-  }, {
-    name: 'sidebar.program',
-    permission: 'LIST_PROGRAM',
-    icon: 'fas fa-folder-open',
-    uri: { name: 'dashboard.program' }
   }]
 }, {
   name: '基础模块',

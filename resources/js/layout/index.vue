@@ -11,10 +11,6 @@
             <el-main>
                 <AppMain></AppMain>
             </el-main>
-
-            <el-footer style="background-color: #00CED1;">
-                <Footer></Footer>
-            </el-footer>
         </el-container>
     </el-container>
 </el-container>
@@ -22,7 +18,6 @@
 
 <script>
 import Header from "./Header";
-import Footer from "./Footer";
 import AppMain from "./AppMain";
 import SideBar from "./SideBar";
 
@@ -31,7 +26,6 @@ export default {
     components: {
         SideBar,
         Header,
-        Footer,
         AppMain
     }
 };
