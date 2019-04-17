@@ -47,6 +47,7 @@ class UsersTableSeeder extends Seeder
         $user->nickname = 'bigliang';
         $user->username = 'bigliang';
         $user->avatar = 'https://iocaffcdn.phphub.org/uploads/images/201710/14/1/ZqM7iaP4CR.png';
+        $user->is_admin = 1;
         $user->save();
     }
 }

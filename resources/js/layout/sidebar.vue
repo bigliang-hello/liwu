@@ -1,25 +1,16 @@
 <template>
-<el-menu :default-active="$route.path" class="el-menu-vertical-demo">
-    <template v-for="(item,index) in menus">
-        <el-submenu :index="index+''" v-if="item.children">
-            <template slot="title"><i :class="item.icon"></i>{{item.name}}</template>
-            <el-menu-item v-for="child in item.children" :index="child.name" :key="child.name" v-if="item.children">{{child.name}}</el-menu-item>
-        </el-submenu>
-        <el-menu-item v-if="!item.children" :index="item.name"><i :class="item.icon"></i>{{item.name}}</el-menu-item>
+<el-menu unique-opened :default-active="$route.path" router>
+    <template v-for="(item, index) in $router.options.routes[0].children[0].children" v-if="item.meta.menuShow">
+        <el-menu-item :index="item.path">
+            {{item.meta.menuName}}
+        </el-menu-item>
     </template>
 </el-menu>
 </template>
 
 <script>
-import menus from "../config/menu.js";
-
 export default {
     name: 'SideBar',
-    data() {
-        return {
-            menus: menus
-        }
-    },
 }
 </script>
 

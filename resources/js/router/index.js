@@ -9,6 +9,9 @@ Vue.use(Router)
 const routes = [{
     path: '/',
     component: () => import('../App.vue') ,
+    meta: {
+      menuShow: false
+    },
     children: [...modules],
   }];
 

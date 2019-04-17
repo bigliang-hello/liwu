@@ -4,6 +4,9 @@ import { routes as article } from './article/index'
 export default [{
   path: '/dashboard',
   component: () => import ('../layout'),
+  meta: {
+    menuShow: false
+  },
   // beforeEnter: requireAuth,
   children: [
     ...home,

@@ -28,4 +28,9 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+    public function isSuperAdmin()
+    {
+        return ($this->id == config('gift.super_admin')) ? 1 : 0;
+    }
+
 }

@@ -23,6 +23,6 @@ Route::get('/gifts/{gift}', 'GiftController@show')->name('gifts.show');
 //    Route::get('{path?}', 'HomeController@index')->where('path', '[\/\w\.-]*');
 //});
 
-Route::group(['prefix' => 'dashboard'], function () {
+Route::group(['prefix' => 'dashboard', 'middleware' => ['auth', 'admin']], function () {
     Route::get('{path?}', 'HomeController@dashboard')->where('path', '[\/\w\.-]*');
 });

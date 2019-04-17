@@ -51,7 +51,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _config_menu_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../config/menu.js */ "./resources/js/config/menu.js");
 //
 //
 //
@@ -62,16 +61,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'SideBar',
-  data: function data() {
-    return {
-      menus: _config_menu_js__WEBPACK_IMPORTED_MODULE_0__["default"]
-    };
-  }
+  name: 'SideBar'
 });
 
 /***/ }),
@@ -284,43 +275,26 @@ var render = function() {
   return _c(
     "el-menu",
     {
-      staticClass: "el-menu-vertical-demo",
-      attrs: { "default-active": _vm.$route.path }
+      attrs: {
+        "unique-opened": "",
+        "default-active": _vm.$route.path,
+        router: ""
+      }
     },
     [
-      _vm._l(_vm.menus, function(item, index) {
-        return [
-          item.children
-            ? _c(
-                "el-submenu",
-                { attrs: { index: index + "" } },
-                [
-                  _c("template", { slot: "title" }, [
-                    _c("i", { class: item.icon }),
-                    _vm._v(_vm._s(item.name))
-                  ]),
-                  _vm._v(" "),
-                  _vm._l(item.children, function(child) {
-                    return item.children
-                      ? _c(
-                          "el-menu-item",
-                          { key: child.name, attrs: { index: child.name } },
-                          [_vm._v(_vm._s(child.name))]
-                        )
-                      : _vm._e()
-                  })
-                ],
-                2
-              )
-            : _vm._e(),
-          _vm._v(" "),
-          !item.children
-            ? _c("el-menu-item", { attrs: { index: item.name } }, [
-                _c("i", { class: item.icon }),
-                _vm._v(_vm._s(item.name))
+      _vm._l(_vm.$router.options.routes[0].children[0].children, function(
+        item,
+        index
+      ) {
+        return item.meta.menuShow
+          ? [
+              _c("el-menu-item", { attrs: { index: item.path } }, [
+                _vm._v(
+                  "\n            " + _vm._s(item.meta.menuName) + "\n        "
+                )
               ])
-            : _vm._e()
-        ]
+            ]
+          : _vm._e()
       })
     ],
     2
@@ -376,97 +350,6 @@ var staticRenderFns = []
 render._withStripped = true
 
 
-
-/***/ }),
-
-/***/ "./resources/js/config/menu.js":
-/*!*************************************!*\
-  !*** ./resources/js/config/menu.js ***!
-  \*************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ([{
-  name: '面板',
-  icon: 'fa fa-tachometer-alt',
-  uri: {
-    name: 'dashboard.home'
-  }
-}, {
-  name: '内容模块',
-  children: [{
-    name: '文章管理',
-    permission: 'LIST_ARTICLE',
-    icon: 'fas fa-book',
-    uri: {
-      name: 'dashboard.article'
-    }
-  }, {
-    name: '评论管理',
-    permission: 'LIST_COMMENT',
-    icon: 'fas fa-comments',
-    uri: {
-      name: 'dashboard.comment'
-    }
-  }, {
-    name: '标签管理',
-    permission: 'LIST_TAG',
-    icon: 'fas fa-tags',
-    uri: {
-      name: 'dashboard.tag'
-    }
-  }, {
-    name: '分类管理',
-    permission: 'LIST_CATEGORY',
-    icon: 'fas fa-list-alt',
-    uri: {
-      name: 'dashboard.category'
-    }
-  }, {
-    name: '友链管理',
-    permission: 'LIST_LINK',
-    icon: 'fas fa-globe',
-    uri: {
-      name: 'dashboard.link'
-    }
-  }]
-}, {
-  name: '基础模块',
-  children: [{
-    name: '用户管理',
-    permission: 'LIST_USER',
-    icon: 'fas fa-users',
-    uri: {
-      name: 'dashboard.user'
-    }
-  }]
-}, {
-  name: '系统模块',
-  children: [{
-    name: '访问列表',
-    permission: 'LIST_VISITOR',
-    icon: 'fas fa-eye',
-    uri: {
-      name: 'dashboard.visitor'
-    }
-  }, {
-    name: '角色列表',
-    permission: 'LIST_ROLE',
-    icon: 'fas fa-exclamation-triangle',
-    uri: {
-      name: 'dashboard.role'
-    }
-  }, {
-    name: '系统配置',
-    permission: 'LIST_SYSTEM_INFO',
-    icon: 'fas fa-cogs',
-    uri: {
-      name: 'dashboard.system'
-    }
-  }]
-}]);
 
 /***/ }),
 
