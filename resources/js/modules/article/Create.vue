@@ -14,26 +14,20 @@
         </div>
         <div class="card-body">
             <el-form ref="form" :model="form" label-width="80px">
-                <el-form-item label="活动名称">
-                    <el-input v-model="form.name"></el-input>
-                </el-form-item>
-                <el-form-item label="活动区域">
+                <el-form-item label="分类">
                     <el-select v-model="form.region" placeholder="请选择活动区域">
-                        <el-option label="区域一" value="shanghai"></el-option>
-                        <el-option label="区域二" value="beijing"></el-option>
+                        <el-option label="分类一" value="shanghai"></el-option>
+                        <el-option label="分类二" value="beijing"></el-option>
                     </el-select>
                 </el-form-item>
-                <el-form-item label="活动时间">
-                    <el-col :span="11">
-                        <el-date-picker type="date" placeholder="选择日期" v-model="form.date1" style="width: 100%;"></el-date-picker>
-                    </el-col>
-                    <el-col class="line" :span="2" style="text-align:center;">-</el-col>
-                    <el-col :span="11">
-                        <el-time-picker type="fixed-time" placeholder="选择时间" v-model="form.date2" style="width: 100%;"></el-time-picker>
-                    </el-col>
+                <el-form-item label="标题">
+                    <el-input v-model="form.name"></el-input>
                 </el-form-item>
                 <el-form-item label="即时配送">
                     <el-switch v-model="form.delivery"></el-switch>
+                </el-form-item>
+                <el-form-item label="活动形式">
+                    <textarea id="editor"></textarea>
                 </el-form-item>
                 <el-form-item label="活动性质">
                     <el-checkbox-group v-model="form.type">
@@ -65,6 +59,8 @@
 
 
 <script>
+import SimpleMDE from 'simplemde'
+
 export default {
     data() {
         return {
@@ -84,6 +80,21 @@ export default {
         onSubmit() {
             console.log('submit!');
         }
+    },
+    mounted() {
+        const simplemde = new SimpleMDE({
+            element: document.querySelector('#editor'),
+            placeholder: '请使用 Markdown 格式书写 ;-)，代码片段黏贴时请注意使用高亮语法。',
+            spellChecker: false,
+            autoDownloadFontAwesome: false,
+            autosave: {
+                enabled: true,
+                uniqueId: 'vuejs-essential'
+            },
+            renderingConfig: {
+                codeSyntaxHighlighting: true
+            }
+        })
     }
 }
 </script>

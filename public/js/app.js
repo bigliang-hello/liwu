@@ -19180,19 +19180,19 @@ __webpack_require__.r(__webpack_exports__);
     path: '/',
     name: 'dashboard.article',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ./Article */ "./resources/js/modules/article/Article.vue"));
+      return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ./Article */ "./resources/js/modules/article/Article.vue"));
     }
   }, {
     path: 'create',
     name: 'dashboard.article.create',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ./Create */ "./resources/js/modules/article/Create.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2)]).then(__webpack_require__.bind(null, /*! ./Create */ "./resources/js/modules/article/Create.vue"));
     }
   }, {
     path: ':id/edit',
     name: 'dashboard.article.edit',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ./Edit */ "./resources/js/modules/article/Edit.vue"));
+      return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! ./Edit */ "./resources/js/modules/article/Edit.vue"));
     }
   }]
 }]);
@@ -19236,7 +19236,7 @@ __webpack_require__.r(__webpack_exports__);
   name: 'dashboard.home',
   path: 'home',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ./Home */ "./resources/js/modules/home/Home.vue"));
+    return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ./Home */ "./resources/js/modules/home/Home.vue"));
   },
   meta: {
     menuShow: true,
