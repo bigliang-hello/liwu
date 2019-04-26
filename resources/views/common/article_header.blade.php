@@ -2,7 +2,7 @@
          style="background-image:url('wp-content/uploads/sites/11/2018/09/2018092212075911.jpeg');">
     <div class="container">
         <div class="row no-gutters">
-            @if(!empty($articles))
+            @if(count($articles) > 0)
                 <div class="items items-left col-12 col-md-6">
                     @include('components.article.top_left', ['article' => $articles->first()])
                 </div>
