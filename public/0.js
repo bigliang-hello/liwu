@@ -76,9 +76,9 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Header */ "./resources/js/layout/Header.vue");
-/* harmony import */ var _AppMain__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AppMain */ "./resources/js/layout/AppMain.vue");
-/* harmony import */ var _SideBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SideBar */ "./resources/js/layout/SideBar.vue");
+/* harmony import */ var _Header_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Header.vue */ "./resources/js/layout/Header.vue");
+/* harmony import */ var _AppMain_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AppMain.vue */ "./resources/js/layout/AppMain.vue");
+/* harmony import */ var _SideBar_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SideBar.vue */ "./resources/js/layout/SideBar.vue");
 //
 //
 //
@@ -103,9 +103,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Layout",
   components: {
-    SideBar: _SideBar__WEBPACK_IMPORTED_MODULE_2__["default"],
-    Header: _Header__WEBPACK_IMPORTED_MODULE_0__["default"],
-    AppMain: _AppMain__WEBPACK_IMPORTED_MODULE_1__["default"]
+    SideBar: _SideBar_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
+    Header: _Header_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
+    AppMain: _AppMain_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
   }
 });
 
