@@ -21,6 +21,7 @@ class RequestApi
 
     public function getAllGift($keyword, $num)
     {
+
         $headers = ['appkey' => $this->tbk_appkey,
             'page' => 1,
             'page_size' => $num,
@@ -42,7 +43,6 @@ class RequestApi
         if ($response->getStatusCode() == 200) {
             return json_decode($response->getBody()->getContents(), true);
         }
-
         return null;
     }
 
