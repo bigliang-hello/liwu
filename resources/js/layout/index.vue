@@ -17,9 +17,9 @@
 </template>
 
 <script>
-import Header from "./Header";
-import AppMain from "./AppMain";
-import SideBar from "./SideBar";
+import Header from "./Header.vue";
+import AppMain from "./AppMain.vue";
+import SideBar from "./SideBar.vue";
 
 export default {
     name: "Layout",
