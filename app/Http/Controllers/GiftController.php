@@ -11,7 +11,8 @@ class GiftController extends Controller
     public function show(Request $request, $id)
     {
         $requestApi = new RequestApi();
-        $gift = $requestApi->getGiftDetail($id);
+        //$gift = $requestApi->getGiftDetail($id);
+        $gift = null;
         return view('gifts.show', compact('gift'));
     }
 }
