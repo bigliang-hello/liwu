@@ -25,5 +25,6 @@
 @include('common.footer')
 
 <script src="{{ mix('js/all.js') }}"></script>
+@yield('js')
 </body>
 </html>
