@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0840014e-1467-4687-a07c-7745a1714aea" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/2018081116435976.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/2018081117270346.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon_all.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/login.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/gifts/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/gifts/show.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,22 +49,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/gifts/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="122" column="24" lean-forward="true" selection-start-line="122" selection-start-column="24" selection-end-line="122" selection-end-column="24" />
+            <state relative-caret-position="115">
+              <caret line="5" column="44" lean-forward="false" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
               <folding>
-                <marker date="1556528688000" expanded="true" signature="9:180" ph="..." />
+                <marker date="1556528922000" expanded="true" signature="9:180" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="614">
+            <state relative-caret-position="1941">
               <caret line="86" column="43" lean-forward="false" selection-start-line="86" selection-start-column="43" selection-end-line="86" selection-end-column="43" />
               <folding />
             </state>
@@ -222,8 +217,8 @@
         <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
         <option value="$PROJECT_DIR$/app/RequestApi/RequestApi.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/GiftController.php" />
-        <option value="$PROJECT_DIR$/resources/views/gifts/show.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/gifts/show.blade.php" />
       </list>
     </option>
   </component>
@@ -700,12 +695,12 @@
       <workItem from="1556261942109" duration="7751000" />
       <workItem from="1556414069377" duration="3491000" />
       <workItem from="1556435345103" duration="2627000" />
-      <workItem from="1556522557315" duration="5999000" />
+      <workItem from="1556522557315" duration="6149000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124588000" />
+    <option name="totallyTimeSpent" value="124738000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1090,21 +1085,21 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/gifts/show.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="122" column="24" lean-forward="true" selection-start-line="122" selection-start-column="24" selection-end-line="122" selection-end-column="24" />
-          <folding>
-            <marker date="1556528688000" expanded="true" signature="9:180" ph="..." />
-          </folding>
+        <state relative-caret-position="1941">
+          <caret line="86" column="43" lean-forward="false" selection-start-line="86" selection-start-column="43" selection-end-line="86" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/gifts/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="614">
-          <caret line="86" column="43" lean-forward="false" selection-start-line="86" selection-start-column="43" selection-end-line="86" selection-end-column="43" />
-          <folding />
+        <state relative-caret-position="115">
+          <caret line="5" column="44" lean-forward="false" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+          <folding>
+            <marker date="1556528922000" expanded="true" signature="9:180" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

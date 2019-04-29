@@ -1,9 +1,9 @@
 @extends('layouts.app', ['class' => 'post-template-default single single-post postid-1941 single-format-standard post-style03 black-top grid-hover grid-radius grid-border my-back'])
 
 @section('content')
-    <section class="nice-post-topbar my-4 my-md-5">
+    <section class="nice-post-topbar">
         <div class="container">
-            <div class="gift-detail p-5">
+            <div class="gift-detail p-5 mt-4">
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-6">
                         <div id="demo" class="carousel slide" data-ride="carousel">
