@@ -84,7 +84,7 @@
         /*
          Fullscreen background
          */
-        $.backstretch('storage/images/login.jpg');
+        $.backstretch('/images/login.jpg');
     });
 
 </script>

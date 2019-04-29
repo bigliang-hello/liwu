@@ -79,7 +79,7 @@
             </div>
         </div>
     </section>
-    <section class="nice-cms-push position-relative pt-4 pt-lg-5 pb-4 pb-md-4 pb-lg-5">
+    <section class="nice-cms-push position-relative pt-lg-5 pb-4 pb-md-4 pb-lg-5">
         <div class="container">
             <div class="cms-push-liststyle02">
                 @include('common.more', ['title' => '推荐礼物', 'href' => '#'])
@@ -162,7 +162,7 @@
 
         .ico {
             padding-left: 20px;
-            background: url(/storage/images/icon_all.png) no-repeat -682px -998px;
+            background: url(/images/icon_all.png) no-repeat -682px -998px;
             float: left;
             height: 22px;
             line-height: 22px;
@@ -174,7 +174,7 @@
         }
 
         .gotaobao {
-            background: url(/storage/images/icon_all.png) no-repeat 0 -710px;
+            background: url(/images/icon_all.png) no-repeat 0 -710px;
             display: block;
             float: left;
             height: 50px;
@@ -188,7 +188,7 @@
         }
 
         .likebut2 {
-            background: url(/storage/images/icon_all.png) no-repeat -400px -1100px;
+            background: url(/images/icon_all.png) no-repeat -400px -1100px;
             float: left;
             height: 50px;
             line-height: 50px;
@@ -219,7 +219,7 @@
         }
 
         .num {
-            background: url(/storage/images/icon_all.png) no-repeat right -1100px;
+            background: url(/images/icon_all.png) no-repeat right -1100px;
             float: left;
             height: 50px;
             line-height: 50px;
@@ -257,7 +257,7 @@
             width: 30px;
             height: 30px;
             text-align: center;
-            background: #FFF url(/storage/images/icon_all.png) no-repeat;
+            background: #FFF url(/images/icon_all.png) no-repeat;
             padding: 0;
             margin: 0;
             margin-right: 8px;
