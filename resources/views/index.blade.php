@@ -34,7 +34,6 @@
                     @each('components.gift.gift', $gifts, 'gift')
                 </div>
             </div>
-
         </div>
     </section>
 
