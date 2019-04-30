@@ -40,3 +40,5 @@ mix.scripts([
         'resources/themes/login/css/style.css'
     ], 'public/css/login.css');
 
+//后端
+mix.sass('resources/sass/app.scss', 'public/css/back.css');

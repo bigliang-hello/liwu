@@ -6,7 +6,7 @@
     <meta name="wap-font-scale" content="no">
     <meta http-equiv="X-UA-Compatible" content="IE=9, IE=8;IE=7, IE=EDGE, chrome=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link  rel='stylesheet' href="{{ mix('css/app.css') }}"/>
+    <link  rel='stylesheet' href="{{ mix('css/back.css') }}"/>
     <style>
     </style>
     <title>{{config('app.name')}}</title>
