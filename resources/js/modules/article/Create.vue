@@ -81,13 +81,15 @@ export default {
     },
 
     created() {
-        $this.loadCategories();
+        this.loadCategories();
     },
 
     methods: {
         loadCategories() {
+
             this.$http.get('categories')
                 .then((response) => {
+                    console.log(response.data.data);
                     this.options = response.data.data
                 })
         },

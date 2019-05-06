@@ -53,7 +53,11 @@ class CategoriesTableSeeder extends Seeder
                 'description' => '程序员',
             ],
         ];
-
-        \Illuminate\Support\Facades\DB::table('categories')->insert($categories);
+        
+        foreach ($categories as $categorie){
+            $cate = new \App\Category();
+            $cate->fill($categorie);
+            $cate->save();
+        }
     }
 }

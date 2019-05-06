@@ -30,6 +30,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/laravel/tinker" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/league/flysystem" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/league/fractal" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/liyu/dingo-serializer-switch" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/maximebf/debugbar" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/mockery/mockery" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/monolog/monolog" />
@@ -124,6 +125,7 @@
           <root url="file://$MODULE_DIR$/vendor/laravel/tinker" />
           <root url="file://$MODULE_DIR$/vendor/league/flysystem" />
           <root url="file://$MODULE_DIR$/vendor/league/fractal" />
+          <root url="file://$MODULE_DIR$/vendor/liyu/dingo-serializer-switch" />
           <root url="file://$MODULE_DIR$/vendor/maximebf/debugbar" />
           <root url="file://$MODULE_DIR$/vendor/mockery/mockery" />
           <root url="file://$MODULE_DIR$/vendor/monolog/monolog" />
@@ -214,6 +216,7 @@
           <root url="file://$MODULE_DIR$/vendor/laravel/tinker" />
           <root url="file://$MODULE_DIR$/vendor/league/flysystem" />
           <root url="file://$MODULE_DIR$/vendor/league/fractal" />
+          <root url="file://$MODULE_DIR$/vendor/liyu/dingo-serializer-switch" />
           <root url="file://$MODULE_DIR$/vendor/maximebf/debugbar" />
           <root url="file://$MODULE_DIR$/vendor/mockery/mockery" />
           <root url="file://$MODULE_DIR$/vendor/monolog/monolog" />
