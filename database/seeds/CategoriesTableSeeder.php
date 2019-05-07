@@ -53,7 +53,7 @@ class CategoriesTableSeeder extends Seeder
                 'description' => '程序员',
             ],
         ];
-        
+
         foreach ($categories as $categorie){
             $cate = new \App\Category();
             $cate->fill($categorie);

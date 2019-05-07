@@ -11,9 +11,14 @@ $api->version('v1',[
 
     //登录接口 1分钟10次
     $api->group([
-//        'middleware' => 'api.auth'
+        'middleware' => ['auth:api', 'admin']
     ], function ($api) {
-        $api->get('categories', 'CategoryController@index')->name('categories.index');
+        $api->get('categories', 'CategoryController@index')->name('api.categories.index');
+        // 图片资源
+        $api->post('images', 'ImageController@store')
+            ->name('api.images.store');
+        $api->post('articles', 'ArticleController@store')
+            ->name('api.articles.store');
     });
 
 });
