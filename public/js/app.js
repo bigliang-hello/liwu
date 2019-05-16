@@ -19168,7 +19168,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ([{
-  path: 'articles',
+  path: '/dashboard/articles',
   component: function component() {
     return Promise.resolve(/*! import() */).then(__webpack_require__.bind(null, /*! ../../App.vue */ "./resources/js/App.vue"));
   },
@@ -19291,15 +19291,17 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
   meta: {
     menuShow: false
   },
-  // beforeEnter: requireAuth,
+  beforeEnter: requireAuth,
   children: [].concat(_toConsumableArray(_home_index__WEBPACK_IMPORTED_MODULE_0__["routes"]), _toConsumableArray(_article_index__WEBPACK_IMPORTED_MODULE_1__["routes"]))
-}]); // function requireAuth(to, from, next) {
-//   if (window.User) {
-//     return next()
-//   } else {
-//     return next('/')
-//   }
-// }
+}]);
+
+function requireAuth(to, from, next) {
+  if (window.User) {
+    return next();
+  } else {
+    return next('/');
+  }
+}
 
 /***/ }),
 
@@ -19379,6 +19381,8 @@ var routes = [{
 }];
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   routes: routes,
+  linkActiveClass: 'active',
+  linkExactActiveClass: 'active',
   mode: 'history'
 });
 router.beforeEach(_beforeEach__WEBPACK_IMPORTED_MODULE_2__["default"]);
@@ -19462,7 +19466,7 @@ http.interceptors.response.use(function (response) {
   }
 
   if ([403].indexOf(response.status) >= 0) {
-    toastr.error(response.data.message);
+    this.$message.error(response.data.message);
   }
 
   return Promise.reject(error);

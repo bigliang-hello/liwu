@@ -34,7 +34,7 @@ http.interceptors.response.use(function(response) {
   }
 
   if ([403].indexOf(response.status) >= 0) {
-    toastr.error(response.data.message)
+    this.$message.error(response.data.message)
   }
 
   return Promise.reject(error);

@@ -17,6 +17,8 @@ const routes = [{
 
 const router = new Router({
   routes,
+  linkActiveClass: 'active',
+  linkExactActiveClass: 'active',
   mode: 'history',
 })
 

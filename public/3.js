@@ -43,34 +43,55 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       filters: {
-        name: ''
+        name: ""
       },
-      tableData: [{
-        date: '2016-05-02',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1518 弄'
-      }, {
-        date: '2016-05-04',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1517 弄'
-      }, {
-        date: '2016-05-01',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1519 弄'
-      }, {
-        date: '2016-05-03',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1516 弄'
-      }]
+      articles: [],
+      pagination: {
+        'total': 0,
+        'per_page': 10
+      },
+      currentPage: 1
     };
   },
   methods: {
-    handleAdd: function handleAdd() {},
-    getUsers: function getUsers() {}
+    getUsers: function getUsers() {},
+    getArticles: function getArticles(page) {
+      var _this = this;
+
+      this.$http.get('articles', {
+        params: {
+          page: page
+        }
+      }).then(function (response) {
+        console.log(response.data);
+        _this.articles = response.data.data;
+        _this.pagination = response.data.meta.pagination;
+      });
+    },
+    handleSizeChange: function handleSizeChange(val) {
+      console.log("\u6BCF\u9875 ".concat(val, " \u6761"));
+    },
+    handleCurrentChange: function handleCurrentChange(val) {
+      this.getArticles(val);
+    }
+  },
+  created: function created() {
+    this.getArticles(1);
   }
 });
 
@@ -178,13 +199,42 @@ var render = function() {
       _vm._v(" "),
       _c(
         "el-table",
-        { staticStyle: { width: "100%" }, attrs: { data: _vm.tableData } },
+        { staticStyle: { width: "100%" }, attrs: { data: _vm.articles } },
         [
-          _c("el-table-column", { attrs: { prop: "date", label: "日期" } }),
+          _c("el-table-column", { attrs: { prop: "id", label: "ID" } }),
           _vm._v(" "),
-          _c("el-table-column", { attrs: { prop: "name", label: "姓名" } }),
+          _c("el-table-column", { attrs: { prop: "title", label: "标题" } }),
           _vm._v(" "),
-          _c("el-table-column", { attrs: { prop: "address", label: "地址" } })
+          _c("el-table-column", { attrs: { prop: "content", label: "内容" } })
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "block",
+          staticStyle: { float: "right", "margin-top": "15px" }
+        },
+        [
+          _c("el-pagination", {
+            attrs: {
+              "current-page": _vm.currentPage,
+              "page-size": _vm.pagination.per_page,
+              layout: "total, prev, pager, next",
+              total: _vm.pagination.total
+            },
+            on: {
+              "size-change": _vm.handleSizeChange,
+              "current-change": _vm.handleCurrentChange,
+              "update:currentPage": function($event) {
+                _vm.currentPage = $event
+              },
+              "update:current-page": function($event) {
+                _vm.currentPage = $event
+              }
+            }
+          })
         ],
         1
       )

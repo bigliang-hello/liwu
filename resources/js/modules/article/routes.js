@@ -1,5 +1,5 @@
 export default [{
-  path: 'articles',
+  path: '/dashboard/articles',
   component: () => import('../../App.vue'),
   meta: {
     menuShow: true,

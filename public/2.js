@@ -69,7 +69,11 @@ __webpack_require__.r(__webpack_exports__);
         cover: ''
       },
       categories: [],
-      simplemde: ''
+      simplemde: '',
+      headers: {
+        'X-CSRF-TOKEN': window.Laravel.csrfToken,
+        'X-Requested-With': 'XMLHttpRequest'
+      }
     };
   },
   mounted: function mounted() {
@@ -111,7 +115,12 @@ __webpack_require__.r(__webpack_exports__);
 
       var url = 'articles' + (this.article.id ? '/' + this.article.id : '');
       this.$http.post(url, this.article).then(function (response) {
-        _this2.categories = response.data.data;
+        _this2.$message({
+          message: '恭喜你，这是一条成功消息',
+          type: 'success'
+        });
+
+        _this2.$router.push('dashboard.article');
       });
     },
     handleAvatarSuccess: function handleAvatarSuccess(res, file) {
@@ -305,6 +314,7 @@ var render = function() {
                       attrs: {
                         multiple: false,
                         action: "/api/images",
+                        headers: _vm.headers,
                         "show-file-list": false,
                         "on-success": _vm.handleAvatarSuccess,
                         "before-upload": _vm.beforeAvatarUpload

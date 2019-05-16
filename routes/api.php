@@ -13,10 +13,13 @@ $api->version('v1',[
     $api->group([
         'middleware' => ['auth:api', 'admin']
     ], function ($api) {
+
         $api->get('categories', 'CategoryController@index')->name('api.categories.index');
         // 图片资源
         $api->post('images', 'ImageController@store')
             ->name('api.images.store');
+        //articles
+        $api->get('articles', 'ArticleController@index')->name('api.articles.index');
         $api->post('articles', 'ArticleController@store')
             ->name('api.articles.store');
     });

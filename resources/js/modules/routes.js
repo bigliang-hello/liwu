@@ -7,17 +7,17 @@ export default [{
   meta: {
     menuShow: false
   },
-  // beforeEnter: requireAuth,
+  beforeEnter: requireAuth,
   children: [
     ...home,
     ...article,
   ],
 }]
 
-// function requireAuth(to, from, next) {
-//   if (window.User) {
-//     return next()
-//   } else {
-//     return next('/')
-//   }
-// }
+function requireAuth(to, from, next) {
+  if (window.User) {
+    return next()
+  } else {
+    return next('/')
+  }
+}

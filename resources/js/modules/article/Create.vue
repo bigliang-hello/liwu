@@ -23,7 +23,7 @@
                 </el-select>
             </el-form-item>
             <el-form-item label="封面">
-                <el-upload class="avatar-uploader" :multiple="false" action="/api/images" :show-file-list="false" :on-success="handleAvatarSuccess" :before-upload="beforeAvatarUpload">
+                <el-upload class="avatar-uploader" :multiple="false" action="/api/images" :headers="headers" :show-file-list="false" :on-success="handleAvatarSuccess" :before-upload="beforeAvatarUpload">
                     <img v-if="article.cover" :src="article.cover" class="avatar">
                     <i v-else class="el-icon-plus avatar-uploader-icon"></i>
                 </el-upload>
@@ -59,6 +59,10 @@ export default {
             },
             categories: [],
             simplemde: '',
+            headers: {
+                'X-CSRF-TOKEN': window.Laravel.csrfToken,
+                'X-Requested-With': 'XMLHttpRequest'
+            }
         }
     },
     mounted() {
@@ -98,7 +102,11 @@ export default {
             let url = 'articles' + (this.article.id ? '/' + this.article.id : '')
             this.$http.post(url, this.article)
                 .then((response) => {
-                    this.categories = response.data.data
+                    this.$message({
+                        message: '恭喜你，这是一条成功消息',
+                        type: 'success'
+                    });
+                    this.$router.push('dashboard.article');
                 })
         },
         handleAvatarSuccess(res, file) {
