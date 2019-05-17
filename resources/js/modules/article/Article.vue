@@ -1,6 +1,7 @@
 <template>
 <section>
-    <el-col class="mb-4">
+    <div class="row">
+      <el-col class="mb-4">
         <el-breadcrumb separator-class="el-icon-arrow-right">
             <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
             <el-breadcrumb-item>活动管理</el-breadcrumb-item>
@@ -21,24 +22,40 @@
             </el-form-item>
         </el-form>
     </el-col>
-    <el-table :data="articles" style="width: 100%">
-        <el-table-column prop="id" label="ID">
-        </el-table-column>
-        <el-table-column prop="title" label="标题">
-        </el-table-column>
-        <el-table-column prop="content" label="内容">
-        </el-table-column>
-    </el-table>
-    <div class="block" style="float: right;margin-top: 15px">
-      <el-pagination
-        @size-change="handleSizeChange"
-        @current-change="handleCurrentChange"
-        :current-page.sync="currentPage"
-        :page-size="pagination.per_page"
-        layout="total, prev, pager, next"
-        :total="pagination.total">
-      </el-pagination>
     </div>
+    
+    <div style="padding:24px; background-color:#fff;">
+        <el-table border :data="articles" style="width: 100%">
+            <el-table-column prop="id" label="ID">
+            </el-table-column>
+            <el-table-column prop="title" label="标题">
+            </el-table-column>
+            <el-table-column prop="content" label="内容">
+            </el-table-column>
+            <el-table-column label="操作">
+              <template slot-scope="scope">
+                <el-button
+                  size="mini"
+                  @click="handleEdit(scope.$index, scope.row)">编辑</el-button>
+                <el-button
+                  size="mini"
+                  type="danger"
+                  @click="handleDelete(scope.$index, scope.row)">删除</el-button>
+              </template>
+            </el-table-column>
+        </el-table>
+        <div class="block" style="float: right;margin-top: 15px">
+          <el-pagination
+            @size-change="handleSizeChange"
+            @current-change="handleCurrentChange"
+            :current-page.sync="currentPage"
+            :page-size="pagination.per_page"
+            layout="total, prev, pager, next"
+            :total="pagination.total">
+          </el-pagination>
+        </div>
+    </div>
+    
   
 </section>
 </template>
@@ -82,6 +99,12 @@
         handleCurrentChange(val)
         {
           this.getArticles(val);
+        },
+        handleEdit(index, row) {
+        console.log(index, row);
+        },
+        handleDelete(index, row) {
+          console.log(index, row);
         }
 
 
