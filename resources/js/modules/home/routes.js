@@ -6,7 +6,7 @@ export default [{
   }
 }, {
   name: 'dashboard.home',
-  path: 'home',
+  path: '/dashboard/home',
   component: () => import('./Home'),
   meta: {
     menuShow: true,

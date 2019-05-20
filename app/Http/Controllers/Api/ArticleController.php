@@ -9,20 +9,46 @@ use Illuminate\Support\Facades\Auth;
 
 class ArticleController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $articles = Article::orderBy('created_at', 'desc')->paginate(10);;
+        $articles = Article::when($keyword = $request->keyword, function ($query) use ($keyword){
+            $query->where('title', 'like', '%'.$keyword.'%');
+        })->orderBy('created_at', 'desc')->paginate(10);
 
         return $this->response->paginator($articles, new ArticleTransformer());
     }
 
     public function store(Request $request)
     {
+        $data = array_merge($request->all(), [
+            'user_id' => Auth::id(),
+        ]);
         $article = new Article();
-        $article->fill($request->all());
-        $article->user_id = Auth::id();
+        $article->fill($data);
         $article->save();
-
         return $this->response->item($article, new ArticleTransformer());
+    }
+
+    public function edit(Request $request, $id)
+    {
+        $article = Article::findOrFail($id);
+        return $this->response->item($article, new ArticleTransformer());
+    }
+
+    public function update(Request $request, $id)
+    {
+        $data = array_merge($request->all(), [
+            'user_id' => Auth::id(),
+        ]);
+        $article = Article::findOrFail($id);
+        $article->fill($data);
+        $article->update();
+        return $this->response->item($article, new ArticleTransformer());
+    }
+
+    public function destroy($id)
+    {
+        Article::findOrFail($id)->delete();
+        return $this->response->noContent();
     }
 }

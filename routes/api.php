@@ -20,8 +20,11 @@ $api->version('v1',[
             ->name('api.images.store');
         //articles
         $api->get('articles', 'ArticleController@index')->name('api.articles.index');
-        $api->post('articles', 'ArticleController@store')
-            ->name('api.articles.store');
+        $api->post('articles', 'ArticleController@store')->name('api.articles.store');
+        $api->post('articles/{id}', 'ArticleController@update')->name('api.articles.update');
+        $api->delete('articles/{id}', 'ArticleController@destroy')->name('api.articles.destroy');
+        $api->get('articles/{id}/edit', 'ArticleController@edit')->name('api.articles.edit');
+
     });
 
 });

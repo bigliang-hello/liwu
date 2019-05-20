@@ -13,6 +13,10 @@ use League\Fractal\TransformerAbstract;
 
 class ArticleTransformer extends TransformerAbstract
 {
+    protected $availableIncludes  = [
+        'category'
+    ];
+
     public function transform(Article $article)
     {
         return [
@@ -20,9 +24,16 @@ class ArticleTransformer extends TransformerAbstract
             'title' => $article->title,
             'content' => $article->content,
             'cover' => $article->cover,
-            'category' =>$article->category->name,
             'created_at' => $article->created_at->toDateTimeString(),
             'updated_at' => $article->updated_at->toDateTimeString(),
         ];
     }
+
+    public function includeCategory(Article $article)
+    {
+        if ($category = $article->category) {
+            return $this->item($category, new CategoryTransformer());
+        }
+    }
+
 }

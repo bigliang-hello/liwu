@@ -1,5 +1,6 @@
 import axios from 'axios'
 import { apiUrl } from '../config/base'
+import { showLoading, hideLoading } from './loading';
 
 /**
  * Create Axios
@@ -22,6 +23,7 @@ http.defaults.headers.common = {
  * Handle all error messages.
  */
 http.interceptors.response.use(function(response) {
+  hideLoading();
   return response;
 }, function(error) {
   const { response } = error
@@ -36,9 +38,14 @@ http.interceptors.response.use(function(response) {
   if ([403].indexOf(response.status) >= 0) {
     this.$message.error(response.data.message)
   }
-
+  
   return Promise.reject(error);
 });
+
+http.interceptors.request.use((req) => {
+  showLoading();
+  return req;
+}, err => Promise.reject(err));
 
 export default function install(Vue) {
   Object.defineProperty(Vue.prototype, '$http', {
