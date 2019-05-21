@@ -1,5 +1,6 @@
 import { routes as home } from './home/index'
 import { routes as article } from './article/index'
+import { routes as category } from './category/index'
 
 export default [{
   path: '/dashboard',
@@ -11,6 +12,7 @@ export default [{
   children: [
     ...home,
     ...article,
+    ...category,
   ],
 }]
 

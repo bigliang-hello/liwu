@@ -37,11 +37,8 @@ class ArticleController extends Controller
 
     public function update(Request $request, $id)
     {
-        $data = array_merge($request->all(), [
-            'user_id' => Auth::id(),
-        ]);
         $article = Article::findOrFail($id);
-        $article->fill($data);
+        $article->fill($request->all());
         $article->update();
         return $this->response->item($article, new ArticleTransformer());
     }

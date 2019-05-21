@@ -1,6 +1,23 @@
 <template>
 <router-view />
 </template>
+<script>
+
+export default {
+    watch: {
+        $route(to, from) {
+            // 如果没有存 获取一下
+            let paths = to.path.split('/')
+            if (paths.length > 3) {
+                paths.splice(3, paths.length - 3)
+            }
+            this.$store.commit('SET_ACTIVEINDEX', paths.length == 1 ? paths[0] : paths.join('/'))
+
+        }
+    },
+}
+
+</script>
 
 <style lang="scss">
 body {

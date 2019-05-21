@@ -24,6 +24,12 @@ $api->version('v1',[
         $api->post('articles/{id}', 'ArticleController@update')->name('api.articles.update');
         $api->delete('articles/{id}', 'ArticleController@destroy')->name('api.articles.destroy');
         $api->get('articles/{id}/edit', 'ArticleController@edit')->name('api.articles.edit');
+        //categories
+        $api->get('categories', 'CategoryController@index')->name('api.categories.index');
+        $api->post('categories', 'CategoryController@store')->name('api.categories.store');
+        $api->post('categories/{id}', 'CategoryController@update')->name('api.categories.update');
+        $api->delete('categories/{id}', 'CategoryController@destroy')->name('api.categories.destroy');
+        $api->get('categories/{id}/edit', 'CategoryController@edit')->name('api.categories.edit');
 
     });
 
