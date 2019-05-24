@@ -1,5 +1,5 @@
 <div class="item">
-    <a class="custom-hover d-block" href="1941.html" target="_blank"
+    <a class="custom-hover d-block" href="{{route('articles.show', $article->id)}}" target="_blank"
        title="{{$article->title}}">
         <div class="custom-hover-img image"
              style="background-image: url('{{$article->cover}}');"></div>

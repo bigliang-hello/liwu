@@ -9,19 +9,22 @@
                 <ul class="navbar-nav navbar-site align-items-center flex-fill flex-nowrap">
                     <li id="menu-item-1" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="{{route('index')}}">首页</a></li>
 
-                    <li id="menu-item-2" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a>推荐好文</a>
+                    <li id="menu-item-3" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#">推荐好文</a></li>
+
+                    <li id="menu-item-2" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a>推荐好礼</a>
                         <ul class="sub-menu">
-                            <li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="#">文章样式1</a></li>
-                            <li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="#">文章样式2</a></li>
-                            <li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="#">文章样式3</a></li>
-                            <li id="menu-item-14" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="#">文章样式4</a></li>
-                            <li id="menu-item-15" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="#">相册文章</a></li>
-                            <li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="#">视频文章</a></li>
-                            <li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="#">视频样式2</a></li>
+                            <li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="#">9.9元店</a></li>
+                            <li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="#">19.9元店</a></li>
+                            <li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="#">全天销量榜</a></li>
+                            <li id="menu-item-14" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="#">两小时销量榜</a></li>
+                            <li id="menu-item-15" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="#">实时人气榜</a></li>
+                            <li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="#">咚咚抢</a></li>
+                            <li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="#">淘抢购</a></li>
+                            <li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="#">聚划算</a></li>
+                            <li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="#">极有家</a></li>
+                            <li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="#">超高券店</a></li>
                         </ul>
                     </li>
-
-                    <li id="menu-item-3" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#">推荐好礼</a></li>
                 </ul>
                 <ul class="navbar-nav navbar-sign align-items-center">
                     <li>

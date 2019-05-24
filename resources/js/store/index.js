@@ -6,11 +6,15 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    userInfo: null,
     sidebar: {
       activeIndex: ''
     },
   },
   mutations: {
+    SET_USERINFO: (state, userInfo) => {
+      state.userInfo = userInfo
+    },
     SET_ACTIVEINDEX: (state, path) => {
       state.sidebar.activeIndex = path
     },

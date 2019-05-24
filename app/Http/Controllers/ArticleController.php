@@ -9,7 +9,8 @@ class ArticleController extends Controller
 {
     public function index()
     {
-
+        $articles = Article::paginate(16);
+        return view('articles.index', compact('articles'));
     }
 
     public function show(Request $request, Article $article)

@@ -17,6 +17,8 @@ Route::get('/', 'HomeController@index')->name('index');
 
 Route::get('/articles/{article}', 'ArticleController@show')->name('articles.show');
 
+Route::get('/articles', 'ArticleController@index')->name('articles.index');
+
 Route::get('/gifts/{id}', 'GiftController@show')->name('gifts.show');
 
 //Route::group(['prefix' => 'dashboard', 'middleware' => ['auth', 'dashboard']], function () {

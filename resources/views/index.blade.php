@@ -16,7 +16,7 @@
         <div class="white-gradient"></div>
         <div class="container">
             <div class="cms-push-liststyle02">
-                @include('common.more', ['title' => '推荐文章', 'href' => '#'])
+                @include('common.more', ['title' => '推荐文章', 'href' => route('articles.index')])
                 <div class="row row-10 row-xs-15">
                     @each('components.article.article', $articles, 'article')
                 </div>
